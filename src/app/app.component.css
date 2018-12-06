@@ -1,0 +1,51 @@
+.header {
+  width: 100%;
+  height: 80px;
+  background-image: linear-gradient(to bottom, #0cf318a1, rgba(255, 255, 255, 0.877));
+  display: grid;
+  grid-template-columns: repeat(0, 1fr);
+  grid-gap: 10px;
+}
+
+.headerCont {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.appTitle {
+  font-size: 30px;
+  margin-left: 10px;
+  text-align: center;
+  margin-top: 30px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+
+.carChoice{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.btnCarChoice{
+  top: 50%;
+  font-size: 18px;
+  text-align: center;
+  color: #070580a1;
+}
+
+.searchCar {
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+.searchCar :hover{
+  cursor: pointer;
+  color: #00e231a1 !important;
+}
+
+

@@ -1,1 +1,37 @@
-<h3>{{message}}</h3>
+<div class="header">
+  <div class="headerCont">
+    <div class="logo">IMMAGINE</div>
+    <div class="appTitle">SmartCar Viewer</div>
+  </div>
+</div>
+
+<!-- FINE HEADER -->
+
+<!-- SCELTA AUTO -->
+<form #carForm="ngForm" (ngSubmit)="searchCar(carForm)">
+  <div class="carChoice">
+    <div></div>
+    <div class="btnCarChoice">
+      <mat-form-field appearance="outline">
+        <mat-label>Scegli una macchina</mat-label>
+        <input name="carPlate"
+          #carPlate
+          matInput
+          placeholder="Scegli una macchina"
+          (ngModel)="carPlate"
+          required
+        />
+        <mat-icon matSuffix><i class="fas fa-car"></i></mat-icon>
+        <mat-hint>Inserisci la targa</mat-hint>
+      </mat-form-field>
+      <span  [hidden]="carForm.invalid" (click)="searchCar(carForm)"
+        ><i class="fas fa-search searchCar"></i
+      ></span>
+    </div>
+
+    <div></div>
+  </div>
+</form>
+<!-- fine SCELTA AUTO -->
+
+<h3>{{ message }}</h3>
